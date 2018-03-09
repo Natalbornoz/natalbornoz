@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
+/* INICIO GREETING */
 #intro {
   background: url('../images/textura-gris.jpg');
   height: 100vh;
   background-size: cover;
   background-position: center;
-
 }
 
 #intro p {
@@ -26,35 +26,61 @@
 }
 
 #greeting button {
+    background-color: #2A2A2A;
+    border-style: none;
+    border-radius:0.5em;
+    font-size: 0.7em;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+#greeting button a {
+    text-decoration-color: none;
+    text-decoration: none;
+    text-decoration-style: none;
+    font-style: none;
+    color: #FFF;
+}
+
+#greeting button:hover {
     background-color: #199A9C;
     color: #FFF;
     border-style: none;
     border-radius:0.5em;
     font-size: 0.7em;
     padding: 0.5em;
+    text-decoration: none;
 }
 
-/* Inicion greeting */
+/* FIN GREETING */
+
+
 #photo-profile {
     border-radius: 50%;
     width: 65%;
+    margin-right: 5em;
 }
-/* Fin greeting */
+
 
 /* Inicio estilos menu */
-.bg-inverse {
-    background-color: #C6C6C9!important; 
+#superiorMenu {
+    background-color: #2A2A2A !important;
+    font-family: 'Anton', sans-serif; 
 }
 
-.navbar-inverse .navbar-nav .nav-link {
-   color:#199A9C; 
-   font-family: 'Rambla', sans-serif;
-   font-size: 1em;
+#superiorMenu a {
+    color: #FFF;
 }
 
-.navbar-inverse .navbar-nav .nav-link:focus, .navbar-inverse .navbar-nav .nav-link:hover {
-    color:#353639;
+#superiorMenu a:hover {
+    color: #199A9C;
 }
+
+#superiorMenu a:focus {
+    color:red;
+    animation-duration: inherit;
+}
+
 /* Fin estilos menu */
 
 #aboutMe {
@@ -64,11 +90,19 @@
   background-position: center;
 }
 
+#projects {
+   background: url('../images/intro.png');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;  
+}
+
 #skills {
   background: url('../images/intro.png');
   height: 100vh;
   background-size: cover;
   background-position: center;
+
 }
 
 .title-section {
@@ -78,14 +112,9 @@
     font-size: 4em;
     color: #199A9C;
     text-align: center;
+    /* border-style: dotted; */
+    vertical-align: middle;
 }
-
-/* .slider {
-  background: url('../images/intro.png');
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-} */
 
 #contact {
   background: url('../images/intro.png');
@@ -100,6 +129,7 @@
   text-align: center;
   padding-top: 0.5em;
   padding-bottom:1em;
+  bottom: 0;
 }
 
 /* Inicio Carousel */
