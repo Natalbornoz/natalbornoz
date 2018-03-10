@@ -69,29 +69,28 @@
 }
 
 #superiorMenu a {
-    color: #FFF;
+    color:#7E7976;
 }
 
 #superiorMenu a:hover {
-    color: #199A9C;
+    color: #FFF;
 }
 
 #superiorMenu a:focus {
-    color:red;
-    animation-duration: inherit;
+    color:#199A9C;
 }
 
 /* Fin estilos menu */
 
 #aboutMe {
-  background: url('../images/intro.png');
+  background: url('../images/ligthgray.jpg');
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
 
 #projects {
-   background: url('../images/intro.png');
+   background: url('../images/darkgray.jpg');
   height: 100vh;
   background-size: cover;
   background-position: center;  
@@ -127,82 +126,25 @@
   background-color: #2A2A2A;
   color: white;
   text-align: center;
-  padding-top: 0.5em;
-  padding-bottom:1em;
-  bottom: 0;
 }
 
-/* Inicio Carousel */
- ul,ol{
-    list-style: none;
- }
-body{
-    font-family: sans-serif;
 
-}
-.slideshow{
-    width: 100%;
-    position:relative;
+/* ANIMACION FRONT END */
+@keyframes animation {
+  from {
+    letter-spacing: 32px;
+  }
+  to {
+    letter-spacing: 0;
+  }
 }
 
-.slider li, ul{
-    width: 100%;
-}
-.slider li{
-    overflow: hidden;
-}
-.slider li img{
-    width:100%;
+.animated {
+  animation: animation 5s ease infinite;
 }
 
-.slider .caption{
-    position: absolute;
-    width:100%;
-    height: 100%;
-    top:0;
-    left:0;
-    padding: 15px 50px;
-    color: #fff;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 1;
+h2 {
+  text-transform: uppercase;
+  white-space: nowrap;
 }
-.slider .caption h2{
-    font-size: 50px;
-}
-.pagination{
-    position: absolute;
-    top: 102%;
-    width:100%;
-    display: flex;
-    justify-content:center;
-}
-.pagination li{
-    font-size: 20px;
-    margin: 2px 5px;
-    color:#858585;
-    cursor: pointer;
-}
-.left, .right{
-    position:absolute;
-    top:0;
-    height: 100%;
-    display:flex;
-    align-items:center;
-    color: #fff;
-    font-size:35px;
-    z-index: 2;
-    cursor: pointer;
-
-}
-
-.left{
-    left: 10px;
-}
-.right{
-    right: 10px;
-}
-/* Fin Carousel */
+/* ANIMACION FRONT END */
