@@ -1,12 +1,17 @@
-*body {
+body {
+    background-color: teal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
+    overflow-y: scroll;
+    text-align: center;
+    
 }
 
 /* INICIO GREETING */
 #intro {
-  background: url('../images/textura-gris.jpg');
+  background: url('assets/images/textura-gris.jpg');
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -57,7 +62,7 @@
 
 #photo-profile {
     border-radius: 50%;
-    width: 65%;
+    width: 50%;
     margin-right: 5em;
 }
 
@@ -65,43 +70,75 @@
 /* Inicio estilos menu */
 #superiorMenu {
     background-color: #2A2A2A !important;
-    font-family: 'Anton', sans-serif; 
+    /* font-family: 'Anton', sans-serif;  */
+    /* font-family: 'Wire One', sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: auto;
+    margin: auto;
 }
 
 #superiorMenu a {
-    color:#7E7976;
+    color:#FFF;
+    margin: 0.5em;
 }
 
 #superiorMenu a:hover {
     color: #FFF;
 }
 
-#superiorMenu a:focus {
-    color:#199A9C;
+#superiorMenu a:active{
+    color:#199A9C !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color:#199A9C;
+    color: #FFF;
+}
+
+.navbar-brand {
+    padding-right: 39em;
 }
 
 /* Fin estilos menu */
 
 #aboutMe {
-  background: url('../images/ligthgray.jpg');
+  background: url('assets/images/ligthgray.jpg');
   height: 100vh;
   background-size: cover;
   background-position: center;
+  font-family: 'Karma', serif;
 }
 
 #projects {
-   background: url('../images/darkgray.jpg');
   height: 100vh;
-  background-size: cover;
   background-position: center;  
+  background:#34495e url("https://raw.githubusercontent.com/Natalbornoz/natalbornoz/master/assets/images/darkgray.jpg") no-repeat center center fixed;
+  background-size:cover;
+  position:relative;
+  overflow:hidden;
+  color:#ffffff;
+  padding-top:150px;
+  padding-bottom: 280px;
+  margin-bottom:0;
 }
 
 #skills {
-  background: url('../images/intro.png');
+  background: url('assets/images/intro.png');
   height: 100vh;
+  width: 100vw;
   background-size: cover;
   background-position: center;
+  margin: 0;
+  padding: 0;
 
+}
+
+#skills .title-section {
+    color:#7E7976;
+}
+
+.devicon {
+    width: 2em;
 }
 
 .title-section {
@@ -115,11 +152,15 @@
     vertical-align: middle;
 }
 
-#contact {
-  background: url('../images/intro.png');
+#contactMe {
+  background: url('assets/images/intro.png');
   height: 100vh;
   background-size: cover;
   background-position: center;
+}
+
+#contactMe .title-section {
+    color:#FFF;
 }
 
 #footer {
@@ -148,3 +189,4 @@ h2 {
   white-space: nowrap;
 }
 /* ANIMACION FRONT END */
+
