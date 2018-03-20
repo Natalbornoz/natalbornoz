@@ -1,0 +1,29 @@
+@media (min-width: 670px) and (max-width: 1023px){
+  .title-section {
+     font-size: 3em;
+     writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 669px){
+  .title-section {
+  font-size: 2em;
+  writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+  }
+}
+
+
+@media (min-width: 670px) and (max-width: 1023px){
+  #aboutMe, #skills, #projects, #contact {
+     height: 100%;
+  }
+}
+
+@media (max-width: 669px){
+  #aboutMe, #skills, #projects, #contact {
+  height: 100%;
+  }
+}
+

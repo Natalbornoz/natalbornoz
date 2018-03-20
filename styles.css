@@ -7,14 +7,22 @@ body {
     overflow-y: scroll;
     text-align: center;
     
+    /* background: url('assets/images/textura-gris.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
 }
+
+    
+
 
 /* INICIO GREETING */
 #intro {
-  background: url('assets/images/textura-gris.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
+    background: url('assets/images/textura-gris.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 #intro p {
@@ -73,10 +81,7 @@ body {
     /* font-family: 'Anton', sans-serif;  */
     /* font-family: 'Wire One', sans-serif; */
     font-family: 'Roboto Condensed', sans-serif;
-    padding: auto;
-    margin: auto;
 }
-
 #superiorMenu a {
     color:#FFF;
     margin: 0.5em;
@@ -84,6 +89,7 @@ body {
 
 #superiorMenu a:hover {
     color: #FFF;
+    font-weight: 700;
 }
 
 #superiorMenu a:active{
@@ -95,42 +101,37 @@ body {
     color: #FFF;
 }
 
-.navbar-brand {
-    padding-right: 39em;
-}
-
-/* Fin estilos menu */
-
 #aboutMe {
-  background: url('assets/images/ligthgray.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  font-family: 'Karma', serif;
+    background: url('assets/images/ligthgray.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Karma', serif;
+    margin: 0;
+    padding: 0;
 }
 
 #projects {
-  height: 100vh;
-  background-position: center;  
-  background:#34495e url("https://raw.githubusercontent.com/Natalbornoz/natalbornoz/master/assets/images/darkgray.jpg") no-repeat center center fixed;
-  background-size:cover;
-  position:relative;
-  overflow:hidden;
-  color:#ffffff;
-  padding-top:150px;
-  padding-bottom: 280px;
-  margin-bottom:0;
+    height: 100vh;
+    background-position: center;  
+    background:#34495e url("https://raw.githubusercontent.com/Natalbornoz/natalbornoz/master/assets/images/darkgray.jpg") no-repeat center center fixed;
+    background-size:cover;
+    position:relative;
+    overflow:hidden;
+    color:#FFF;
+    padding-top:150px;
+    padding-bottom: 280px;
+    margin-bottom:0;
 }
 
 #skills {
-  background: url('assets/images/intro.png');
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  padding: 0;
-
+    background: url('assets/images/intro.png');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
 }
 
 #skills .title-section {
@@ -138,7 +139,8 @@ body {
 }
 
 [class*=" devicon-"], [class^=devicon-] {
-    font-size: 7em;
+    font-size: 4em;
+    padding: 0.3em;
     color:#FFF;
 }
 
@@ -154,10 +156,13 @@ body {
 }
 
 #contactMe {
-  background: url('assets/images/intro.png');
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
+    background: url('assets/images/intro.png');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
 }
 
 #contactMe .title-section {
@@ -165,9 +170,9 @@ body {
 }
 
 #footer {
-  background-color: #2A2A2A;
-  color: white;
-  text-align: center;
+    background-color: #2A2A2A;
+    color: white;
+    text-align: center;
 }
 
 
@@ -182,12 +187,12 @@ body {
 }
 
 .animated {
-  animation: animation 5s ease infinite;
+    animation: animation 5s ease infinite;
 }
 
 h2 {
-  text-transform: uppercase;
-  white-space: nowrap;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 /* ANIMACION FRONT END */
 

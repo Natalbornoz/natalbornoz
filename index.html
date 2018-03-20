@@ -28,6 +28,8 @@
         });
     </script>    
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+
     
     
 
@@ -38,7 +40,7 @@
         <div id="greeting" class="col-12">
             <p>HOLA !</p>
             <h3>Soy NATALIA ALBORNOZ</h3>
-            <h2 class="animated">FRONT END</h2>
+            <h2 class="animated">FRONT END DEVELOPER </h2>
             <hr>
             <h3>Bienvenidos</h3>
             <h5>a mi Portafolio</h5>
@@ -52,130 +54,155 @@
     </section>
 
 <!-- INICIO MENU DE NAVEGACION -->
-<nav id="superiorMenu" class="container-flex navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav id="superiorMenu" class="container-flex navbar navbar-expand-lg navbar-light bg-light sticky-top">
 
-    <a data-scroll class="navbar-brand" href="#">Navbar</a>
+        <a data-scroll class="navbar-brand" href="#">LOGO</a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto nav-pills ">
-            <li class="col-xs-2 nav-item">
-                <a data-scroll href="#aboutMe" class="btn nav-link active" role="button" aria-pressed="true">ABOUT-ME</a>
-            </li>
-            <li class="nav-item">
-                <a data-scroll href="#skills" class="btn nav-link active" role="button" aria-pressed="true">SKILLS</a>
-            </li>
-            <li class="nav-item">
-                <a data-scroll href="#projects" class="btn nav-link active" role="button" aria-pressed="true">PROJECTS</a>
-            </li> 
-            <li class="nav-item">
-                <a data-scroll href="#contactMe" class="btn nav-link active" role="button" aria-pressed="true">CONTACT-ME</a>
-            </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto nav-pills ">
+                <li class="col-xs-2 nav-item">
+                    <a data-scroll href="#aboutMe" class="btn nav-link active" role="button" aria-pressed="true">ABOUT-ME</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll href="#skills" class="btn nav-link active" role="button" aria-pressed="true">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll href="#projects" class="btn nav-link active" role="button" aria-pressed="true">PROJECTS</a>
+                </li> 
+                <li class="nav-item">
+                    <a data-scroll href="#contactMe" class="btn nav-link active" role="button" aria-pressed="true">CONTACT-ME</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- FIN MENU DE NAVEGACION -->
+
+    <!-- CONTAINER TODAS LAS SECCIONES -->
+    <div class="container-flex">
+        <!-- INICIO SECCION 1 ABOUT ME -->
+        <section id="aboutMe" class="row container-flex align-items-center mt-10 pt-10">
+            <div class="col-2">
+                <p class="title-section">ABOUT-ME</p>
+            </div>
+            <div class=" col-lg-5 col-sm-12">
+                <img id="photo-profile" src="assets/images/me-momentanea.jpg" alt="">
+                <br>
+        
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, ad deleniti quibusdam autem in cumque doloremque magni veritatis illo soluta </p>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <p>Soy Natalia Albornoz</p>
+                <hr>
+                <p>FRONT END DEVELOPER - GRAPHIC DESIGNER</p>
+                <hr>
+                <p>mostrar la hilacha picao e' la araña lanza. Ah si po fome huachaca, fresco chancho cachamal cuico a lapa buitrear
+                    perrín chamullento mote con huesillo tata polola pichanga. Dejar la embarrada canchero un palo cuma chulongo
+                    pichí tocando el violín.
+                </p>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minima porro asperiores voluptate alias assumenda corrupti
+                    eos perspiciatis.</p>
+            </div>
+            
+        </section>
+        
+        <!-- INICIO SECCION 2 SKILLS -->
+        <section id="skills" class="row container-flex align-items-center mt-10 pt-10">
+            <div class="col-2">
+                <p class="title-section">SKILLS</p>
+            </div>
+            <div class="row col-10">
+                <div class="col-5">
+                    <i class="devicon devicon-atom-original"></i>
+                    <i class="devicon devicon-bootstrap-plain-wordmark"></i>
+                    <i class="devicon devicon-css3-plain"></i>
+                    <i class="devicon devicon-html5-plain"></i>
+                    <i class="devicon-slack-plain"></i>
+                    <i class="devicon-visualstudio-plain"></i>
+                    
+                </div>
+                <div class="col-5">
+                    <i class="devicon devicon-devicon-plain"></i>
+                    <i class="devicon devicon-github-plain"></i>
+                    <i class="devicon devicon-git-plain"></i>
+                </div>
+                <div class="col-5">
+                    <i class="devicon devicon-jquery-plain"></i>
+                    <i class="devicon devicon-javascript-plain"></i>
+                    <i class="devicon devicon-mocha-plain"></i>
+                    <i class="devicon devicon-react-original"></i>
+                    <i class="devicon devicon-nodejs-plain"></i>
+                </div>
+            </div>
+            <div class="row col-10">
+                <div class="col-5">
+                    <i class="devicon devicon-photoshop-plain"></i>
+                    <i class="devicon devicon-illustrator-plain"></i>
+                    <i class="devicon devicon-trello-plain"></i>
+                </div>
+                <div class="col-5">
+                    <i class="devicon devicon-mysql-plain"></i>
+                    <i class="devicon devicon-java-plain"></i>
+                </div>
+            </div>
+        </section>
+        <!-- INICIO SECCION 3 PROJECTS -->
+        <section id="projects" class="row container-flex align-items-center mt-10 pt-10">
+            <div class="col-2">
+                <p class="title-section">PROJECTS</p>
+            </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="https://invatar0.appspot.com/svg/q.jpg?s=150" alt="Generic placeholder thumbnail">
+                    </div>
+
+                    <div class="caption">
+                        <h3>QuakeCL</h3>
+                        <p>View recent earthquakes in terminal</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="https://invatar0.appspot.com/svg/q.jpg?s=150" alt="Generic placeholder thumbnail">
+                    </div>
+
+                    <div class="caption">
+                        <h3>Tax Visualization</h3>
+                        <p>Visualization of tax in Nepal.</p>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="https://invatar0.appspot.com/svg/f.jpg?s=150&bg=%233b5998" alt="Generic placeholder thumbnail">
+                    </div>
+
+                    <div class="caption">
+                        <h3>fb-notify</h3>
+                        <p>Facebook notifications for Linux</p>
+                    </div>
+                </div>
+        </section>
+        <!-- INICIO SECCION 4 CONTACT ME -->
+        <section id="contactMe" class="row container-flex align-items-center">
+            <div class="col-2">
+                <p class="title-section">CONTACT</p>
+            </div>
+            <div class="col-8">
+                <h3>
+                    <a href="#intro">
+                        <span class="glyphicon glyphicon-menu-up pull-right" style="margin-right:30px;"></span>
+                </h3>
+            </div>
+        </section>
     </div>
-</nav>
-<!-- FIN MENU DE NAVEGACION -->
-
-<!-- CONTAINER TODAS LAS SECCIONES -->
-<div class="container-flex">
-    <!-- INICIO SECCION 1 ABOUT ME -->
-    <section id="aboutMe" class="row container-flex align-items-center mt-8 pt-8">
-        <div class="col-2">
-            <p class="title-section">ABOUT-ME</p>
-        </div>
-        <div class="col-5">
-            <img id="photo-profile" src="assets/images/me-momentanea.jpg" alt="">
-            <br>
-    
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, ad deleniti quibusdam autem in cumque doloremque magni veritatis illo soluta </p>
-        </div>
-        <div class="col-3 col-10-sm">
-            <p>Soy Natalia Albornoz</p>
-            <hr>
-            <p>FRONT END DEVELOPER - GRAPHIC DESIGNER</p>
-            <hr>
-            <p>mostrar la hilacha picao e' la araña lanza. Ah si po fome huachaca, fresco chancho cachamal cuico a lapa buitrear
-                perrín chamullento mote con huesillo tata polola pichanga. Dejar la embarrada canchero un palo cuma chulongo
-                pichí tocando el violín.
-            </p>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint minima porro asperiores voluptate alias assumenda corrupti
-                eos perspiciatis.</p>
-        </div>
-        
-    </section>
-    
-    <!-- INICIO SECCION 2 SKILLS -->
-    <section id="skills" class="row container-flex align-items-center mt-8 pt-8">
-        <div class="col-2">
-            <p class="title-section">SKILLS</p>
-        </div>
-        <div class="col-4">
-           <h4>dfjiergieriher</h4>
-        <i class="devicon devicon-atom-original-wordmark"></i>
-        <i class="devicon devicon-bootstrap-plain-wordmark"></i>
-        <i class="devicon devicon-css3-plain"></i>
-        
-        </div>
-        <div class="col-5">
-        </div>
-    </section>
-    <!-- INICIO SECCION 3 PROJECTS -->
-    <section id="projects" class="row container-flex align-items-center mt-8 pt-8">
-        <div class="col-2">
-            <p class="title-section">PROJECTS</p>
-        </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="https://invatar0.appspot.com/svg/q.jpg?s=150" alt="Generic placeholder thumbnail">
-                </div>
-
-                <div class="caption">
-                    <h3>QuakeCL</h3>
-                    <p>View recent earthquakes in terminal</p>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="https://invatar0.appspot.com/svg/q.jpg?s=150" alt="Generic placeholder thumbnail">
-                </div>
-
-                <div class="caption">
-                    <h3>Tax Visualization</h3>
-                    <p>Visualization of tax in Nepal.</p>
-
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="https://invatar0.appspot.com/svg/f.jpg?s=150&bg=%233b5998" alt="Generic placeholder thumbnail">
-                </div>
-
-                <div class="caption">
-                    <h3>fb-notify</h3>
-                    <p>Facebook notifications for Linux</p>
-                </div>
-            </div>
-    </section>
-    <!-- INICIO SECCION 4 CONTACT ME -->
-    <section id="contactMe" class="row container-flex align-items-center">
-        <div class="col-2">
-            <p class="title-section">CONTACT</p>
-        </div>
-        <div class="col-8">
-            <h3>
-                <a href="#intro">
-                    <span class="glyphicon glyphicon-menu-up pull-right" style="margin-right:30px;"></span>
-            </h3>
-        </div>
-    </section>
-</div>
  
     <script src="js/app.js"></script>
     <!-- Optional JavaScript -->
