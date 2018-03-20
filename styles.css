@@ -137,8 +137,9 @@ body {
     color:#7E7976;
 }
 
-.devicon {
-    width: 2em;
+[class*=" devicon-"], [class^=devicon-] {
+    font-size: 7em;
+    color:#FFF;
 }
 
 .title-section {
