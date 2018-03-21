@@ -6,6 +6,8 @@ body {
     position: relative;
     overflow-y: scroll;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     
     /* background: url('assets/images/textura-gris.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -14,15 +16,22 @@ body {
     background-size: cover; */
 }
 
-    
 
 
 /* INICIO GREETING */
+.nata {
+    color: #2A2A2A;
+}
+
 #intro {
     background: url('assets/images/textura-gris.jpg');
     height: 100vh;
+    width: 100vw;
     background-size: cover;
     background-position: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 #intro p {
@@ -81,6 +90,7 @@ body {
     /* font-family: 'Anton', sans-serif;  */
     /* font-family: 'Wire One', sans-serif; */
     font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
 }
 #superiorMenu a {
     color:#FFF;
@@ -101,7 +111,7 @@ body {
     color: #FFF;
 }
 
-#aboutMe {
+#about {
     background: url('assets/images/ligthgray.jpg');
     height: 100vh;
     background-size: cover;
@@ -109,6 +119,7 @@ body {
     font-family: 'Karma', serif;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 #projects {
@@ -119,9 +130,10 @@ body {
     position:relative;
     overflow:hidden;
     color:#FFF;
-    padding-top:150px;
-    padding-bottom: 280px;
-    margin-bottom:0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
 }
 
 #skills {
@@ -132,6 +144,7 @@ body {
     background-position: center;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 #skills .title-section {
@@ -155,7 +168,7 @@ body {
     vertical-align: middle;
 }
 
-#contactMe {
+#contact {
     background: url('assets/images/intro.png');
     height: 100vh;
     width: 100vw;
@@ -163,9 +176,10 @@ body {
     background-position: center;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
-#contactMe .title-section {
+#contact .title-section {
     color:#FFF;
 }
 
@@ -176,7 +190,7 @@ body {
 }
 
 
-/* ANIMACION FRONT END */
+/* ANIMACION HOLA */
 @keyframes animation {
   from {
     letter-spacing: 32px;
@@ -194,5 +208,32 @@ h2 {
     text-transform: uppercase;
     white-space: nowrap;
 }
-/* ANIMACION FRONT END */
+/* ANIMACION HOLA */
 
+/* ANIMACION FRONT END DEVELOPER */
+.console-container{
+  font-size: 3em;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 7s infinite;
+    -moz-animation: blink 8s infinite;
+    animation: blink 7s infinite;
+    display:inline-block;
+    position: relative;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+}
+
+50% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+/* ANIMACION FRONT END DEVELOPER */
