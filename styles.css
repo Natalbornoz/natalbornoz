@@ -50,7 +50,7 @@ body {
 #greeting button {
     background-color: #2A2A2A;
     border-style: none;
-    border-radius:0.5em;
+    border-radius:0.3em;
     font-size: 0.7em;
     padding: 0.5em;
     text-decoration: none;
@@ -62,16 +62,26 @@ body {
     text-decoration-style: none;
     font-style: none;
     color: #FFF;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#greeting button a:hover {
+    font-weight: 700;
 }
 
 #greeting button:hover {
     background-color: #199A9C;
     color: #FFF;
     border-style: none;
-    border-radius:0.5em;
+    border-radius:0.3em;
     font-size: 0.7em;
     padding: 0.5em;
     text-decoration: none;
+}
+
+.descripcion1 {
+    padding: 2em;
+    text-align: left;
 }
 
 /* FIN GREETING */
@@ -80,7 +90,6 @@ body {
 #photo-profile {
     border-radius: 50%;
     width: 50%;
-    margin-right: 5em;
 }
 
 
@@ -157,6 +166,10 @@ body {
     color:#FFF;
 }
 
+.dev {
+    margin: 3em;
+}
+
 .title-section {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
@@ -183,8 +196,27 @@ body {
     color:#FFF;
 }
 
+.awesome {
+    color: #FFF;
+    font-size: 3em;
+}
+
+.awesomeTop {
+    color: #FFF;
+	cursor:pointer;
+	/* position: absolute;
+    left: 58%;
+    margin-top: 47px;
+    width: 156%;
+    height: 50px; */
+
+   
+}
+
+
+
 #footer {
-    background-color: #2A2A2A;
+    font-family: 'Karma', serif;
     color: white;
     text-align: center;
 }

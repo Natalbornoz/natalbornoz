@@ -8,13 +8,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Anton|Rambla|Varela+Round|Paytone+One|Karma|Slabo+27px|Roboto+Condensed|Wire+One" rel="stylesheet">
     <title>NATALBORNOZ</title>
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- devicon -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" 
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-   
+    
     <!-- Scroll -->
     <script src="js/smooth-scroll.min.js"></script>
     <script>
@@ -51,7 +53,7 @@
             <div>
                 <hr>
                 <button>
-                    <a data-scroll href="#about">VER MÁS</a>
+                    <a class="verMas" data-scroll href="#about">VER MÁS</a>
                 </button>
             </div>
         </div>
@@ -90,14 +92,13 @@
     <div class="container-flex">
         <!-- INICIO SECCION 1 ABOUT ME -->
         <section id="about" class="row container-flex align-items-center mt-10 pt-10">
-            <div class="col-2">
+            <div class="col-lg-2 col-sm-12">
                 <p class="title-section">ABOUT</p>
             </div>
             <div class=" col-lg-5 col-sm-12">
                 <img id="photo-profile" src="assets/images/me-momentanea.jpg" alt="">
                 <br>
-        
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, ad deleniti quibusdam autem in cumque doloremque magni veritatis illo soluta </p>
+                <p class="descripcion1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, ad deleniti quibusdam autem in cumque doloremque magni veritatis illo soluta </p>
             </div>
             <div class="col-lg-3 col-sm-12">
                 <p>Soy Natalia Albornoz</p>
@@ -117,47 +118,56 @@
         
         <!-- INICIO SECCION 2 SKILLS -->
         <section id="skills" class="row container-flex align-items-center mt-10 pt-10">
-            <div class="col-2">
+            <div class="col-lg-2 col-sm-12">
                 <p class="title-section">SKILLS</p>
             </div>
-            <div class="row col-10">
+            <div class="row col-lg-10 col-sm-12">
                 <div class="col-5">
-                    <i class="devicon devicon-atom-original"></i>
+                    <span>
+                        <i class="devicon devicon-atom-original"></i>
+                        <hr class="dev">
+                        <h6>Atom</h6>
+                    </span>
+                    
                     <i class="devicon devicon-bootstrap-plain-wordmark"></i>
                     <i class="devicon devicon-css3-plain"></i>
                     <i class="devicon devicon-html5-plain"></i>
                     <i class="devicon-slack-plain"></i>
                     <i class="devicon-visualstudio-plain"></i>
                     
-                </div>
-                <div class="col-5">
-                    <i class="devicon devicon-devicon-plain"></i>
-                    <i class="devicon devicon-github-plain"></i>
-                    <i class="devicon devicon-git-plain"></i>
-                </div>
-                <div class="col-5">
-                    <i class="devicon devicon-jquery-plain"></i>
-                    <i class="devicon devicon-javascript-plain"></i>
-                    <i class="devicon devicon-mocha-plain"></i>
-                    <i class="devicon devicon-react-original"></i>
-                    <i class="devicon devicon-nodejs-plain"></i>
-                </div>
-            </div>
-            <div class="row col-10">
-                <div class="col-5">
-                    <i class="devicon devicon-photoshop-plain"></i>
-                    <i class="devicon devicon-illustrator-plain"></i>
-                    <i class="devicon devicon-trello-plain"></i>
-                </div>
-                <div class="col-5">
-                    <i class="devicon devicon-mysql-plain"></i>
-                    <i class="devicon devicon-java-plain"></i>
-                </div>
+                <!-- </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="col-6">
+                            <i class="devicon devicon-devicon-plain"></i>
+                            <i class="devicon devicon-github-plain"></i>
+                            <i class="devicon devicon-git-plain"></i>
+                            <i class="devicon devicon-nodejs-plain"></i>
+                        </div>
+                        <div class="col-6">
+                            <i class="devicon devicon-jquery-plain"></i>
+                            <i class="devicon devicon-javascript-plain"></i>
+                            <i class="devicon devicon-mocha-plain"></i>
+                            <i class="devicon devicon-react-original"></i>
+                        </div>
+                    </div>
+                    <div class="row col-lg-10 col-sm-12">
+                        <div class="col-5">
+                            <i class="devicon devicon-photoshop-plain"></i>
+                            <i class="devicon devicon-illustrator-plain"></i>
+                            <i class="devicon devicon-trello-plain"></i>
+                        </div>
+                        <div class="col-5">
+                            <i class="devicon devicon-mysql-plain"></i>
+                            <i class="devicon devicon-java-plain"></i>
+                        </div>
+                     </div>
+                </div> -->
             </div>
         </section>
         <!-- INICIO SECCION 3 PROJECTS -->
         <section id="projects" class="row container-flex align-items-center mt-10 pt-10">
-            <div class="col-2">
+            <div class="col-lg-2 col-sm-12">
                 <p class="title-section">PROJECTS</p>
             </div>
                 <div class="col-sm-6 col-md-3">
@@ -196,14 +206,22 @@
         </section>
         <!-- INICIO SECCION 4 CONTACT ME -->
         <section id="contact" class="row container-flex align-items-center">
-            <div class="col-2">
+            <div class="col-lg-2 col-sm-12">
                 <p class="title-section">CONTACT</p>
             </div>
-            <div class="col-8">
-                <h3>
-                    <a href="#intro">
-                        <span class="glyphicon glyphicon-menu-up pull-right" style="margin-right:30px;"></span>
-                </h3>
+            <div class="col-lg-10">
+                <i class="awesome fab fa-github-square"></i>
+                <i class="awesome fab fa-linkedin"></i>
+                <i class="awesome fas fa-envelope-square"></i>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <a data-scroll href="#intro" class="btn nav-link active align-self-end" role="button" aria-pressed="true"><i class="awesomeTop awesome fas fa-angle-double-up"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <hr>
+               <h6 id="footer">Natalia Albornoz | Santiago de Chile | 2018</h6>
             </div>
         </section>
     </div>
@@ -218,11 +236,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <!-- fontawesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
-        crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
-        crossorigin="anonymous"></script>
+   
 </body>
 
 </html>

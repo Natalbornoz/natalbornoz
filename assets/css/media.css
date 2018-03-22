@@ -10,20 +10,38 @@
   .title-section {
   font-size: 2em;
   writing-mode: horizontal-tb;
-    transform: rotate(0deg);
+  transform: rotate(0deg);
+  padding: 2em;
+  padding-top: 3em;
+  text-align: center;
+  align-items: center;
+  align-content: center;
   }
 }
 
 
 @media (min-width: 670px) and (max-width: 1023px){
-  #aboutMe, #skills, #projects, #contact {
+  #about, #skills, #projects, #contact {
      height: 100%;
+     height: auto;
   }
 }
 
 @media (max-width: 669px){
-  #aboutMe, #skills, #projects, #contact {
-  height: 100%;
+  #about, #skills, #projects, #contact {
+     height: 100%;
+     height: auto;
   }
 }
 
+@media (min-width: 670px) and (max-width: 1023px){
+  .awesomeTop {
+     padding-left: 7em;
+  }
+}
+
+@media (max-width: 669px){
+  #awesomeTop {
+     padding-left: 7em;
+  }
+}
