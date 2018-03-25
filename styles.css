@@ -16,15 +16,23 @@ body {
     background-size: cover; */
 }
 
+/* ESTILOS GENERALES */
+.title-section {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: 'Anton', sans-serif;
+    font-size: 4em;
+    color: #199A9C;
+    text-align: center;
+    /* border-style: dotted; */
+    vertical-align: middle;
+     /* text-shadow: 0 0 35px rgba(0,0,0,0.7); */
+}
 
 
 /* INICIO GREETING */
-.nata {
-    color: #2A2A2A;
-}
-
 #intro {
-    background: url('assets/images/textura-gris.jpg');
+    background: url('assets/images/textura-turquesa.jpg');
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -37,6 +45,17 @@ body {
 #intro p {
     font-family: 'Anton', sans-serif;
     font-size: 5em;
+}
+
+.introText1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #199A9C;
+
+}
+
+.introText2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #199A9C;
 }
 
  #greeting {
@@ -82,20 +101,17 @@ body {
 .descripcion1 {
     padding: 2em;
     text-align: left;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #199A9C;
+  
 }
-
 /* FIN GREETING */
 
-
-#photo-profile {
-    border-radius: 50%;
-    width: 50%;
-}
-
-
-/* Inicio estilos menu */
+/* INICIO ESTILO MENU */
 #superiorMenu {
     background-color: #2A2A2A !important;
+    /* background-color:#b7b7b7 !important; */
     /* font-family: 'Anton', sans-serif;  */
     /* font-family: 'Wire One', sans-serif; */
     font-family: 'Roboto Condensed', sans-serif;
@@ -112,12 +128,25 @@ body {
 }
 
 #superiorMenu a:active{
-    color:#199A9C !important;
+    color:#60FFE9 !important;
+}
+
+.isoNav {
+    height: 2.5em;
+    margin-right: 41em;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background-color:#199A9C;
+    /* background-color:#00d1cd; */
+    background-color: #199A9C;
     color: #FFF;
+}
+/* FIN ESTILO MENU */
+
+/* INICIO ESTILOS ABOUT */
+#photo-profile {
+    border-radius: 50%;
+    width: 50%;
 }
 
 #about {
@@ -131,10 +160,20 @@ body {
     width: 100%;
 }
 
+.descripcion1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #199A9C;
+}
+
+.titulo-descripcion {
+     font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* INICIO ESTILOS PROJECTS */
 #projects {
     height: 100vh;
     background-position: center;  
-    background:#34495e url("https://raw.githubusercontent.com/Natalbornoz/natalbornoz/master/assets/images/darkgray.jpg") no-repeat center center fixed;
+    background:#34495e url('assets/images/ligthgray.jpg') no-repeat center center fixed;
     background-size:cover;
     position:relative;
     overflow:hidden;
@@ -145,8 +184,14 @@ body {
    
 }
 
+#projects .title-section {
+    color: #FFF;
+     
+}
+
+/* INICIO ESTILOS SKILLS */
 #skills {
-    background: url('assets/images/intro.png');
+    background: url('assets/images/ligthgray.jpg');
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -164,23 +209,21 @@ body {
     font-size: 4em;
     padding: 0.3em;
     color:#FFF;
+    z-index: initial
 }
 
-.dev {
-    margin: 3em;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+ 
+}
+li {
+    float: left;
+    padding-bottom: 1em;
 }
 
-.title-section {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    font-family: 'Anton', sans-serif;
-    font-size: 4em;
-    color: #199A9C;
-    text-align: center;
-    /* border-style: dotted; */
-    vertical-align: middle;
-}
-
+/* INICIO ESTILOS CONTACT */
 #contact {
     background: url('assets/images/intro.png');
     height: 100vh;
@@ -198,10 +241,24 @@ body {
 
 .awesome {
     color: #FFF;
-    font-size: 3em;
+    font-size: 4em;
+    
 }
 
 .awesomeTop {
+    margin: 0;
+    position: relative;
+    left: 12px;
+    top: 10px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
     color: #FFF;
 	cursor:pointer;
 	/* position: absolute;
@@ -209,11 +266,7 @@ body {
     margin-top: 47px;
     width: 156%;
     height: 50px; */
-
-   
 }
-
-
 
 #footer {
     font-family: 'Karma', serif;
@@ -221,37 +274,27 @@ body {
     text-align: center;
 }
 
-
-/* ANIMACION HOLA */
-@keyframes animation {
-  from {
-    letter-spacing: 32px;
-  }
-  to {
-    letter-spacing: 0;
-  }
+/* ESTILOS ANIMACION */
+#text {
+ font-family: 'Anton', sans-serif;   
+ padding-top: 2em;
+ color: #199A9C;
 }
 
-.animated {
-    animation: animation 5s ease infinite;
+.typed-cursor {
+   color: #199A9C;  
 }
 
-h2 {
-    text-transform: uppercase;
-    white-space: nowrap;
-}
-/* ANIMACION HOLA */
 
-/* ANIMACION FRONT END DEVELOPER */
 .console-container{
   font-size: 3em;
 }
 
 .typed-cursor{
     opacity: 1;
-    -webkit-animation: blink 7s infinite;
-    -moz-animation: blink 8s infinite;
-    animation: blink 7s infinite;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
     display:inline-block;
     position: relative;
 }
@@ -268,4 +311,8 @@ h2 {
     opacity: 1;
 }
 }
+
 /* ANIMACION FRONT END DEVELOPER */
+
+
+

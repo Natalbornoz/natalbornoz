@@ -45,3 +45,92 @@
      padding-left: 7em;
   }
 }
+
+
+
+@media (min-width: 670px) and (max-width: 1023px){
+  .console-container{
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 669px){
+    .console-container{
+    font-size: 1em;
+  }
+}
+
+
+@media (min-width: 670px) and (max-width: 1023px){
+  .isoNav {
+    height: 2.5em;
+    margin-right: 0;
+}
+
+  
+}
+
+@media (max-width: 669px){
+    .isoNav {
+    height: 2.5em;
+    margin-right: 0;
+}
+}
+
+
+@media screen and (min-width: 670px) and (max-width: 1023px) {
+  
+  .hexagon {
+    width: 75px;
+    height: 43.30px;
+    margin: 21.65px 0;
+    margin-bottom: 5px;
+  }
+  .hexagon:before,
+  .hexagon:after {
+    width: 53.03px;
+    height: 53.03px;
+    left: 10.9835px;
+  }
+  .hexagon:before {
+    top: -26.5165px;
+  }
+  .hexagon:after {
+    bottom: -26.5165px;
+  }
+  /*cover up extra shadows*/
+  .hexagon span {
+    width: 75px;
+    height: 43.3013px;
+    
+  }
+  
+}
+
+@media screen and (max-width: 669px) {
+  .hexagon {
+    width: 126px;
+    height: 72.17px;
+    margin: 60px 0;
+    margin-bottom: 10px;
+  }
+  .hexagon:before,
+  .hexagon:after {
+    width: 88.39px;
+    height: 88.39px;
+    left: 18.3058px;
+  }
+  .hexagon:before {
+    top: -44.1942px;
+  }
+  .hexagon:after {
+    bottom: -44.1942px;
+  }
+  /*cover up extra shadows*/
+  .hexagon span {
+    width: 125px;
+    height: 72.1688px;
+  }
+
+}
+
