@@ -123,7 +123,7 @@ body {
 
 .isoNav {
     height: 2.5em;
-    margin-right: 41em;
+    /* margin-right: 41em; */
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -208,7 +208,10 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-   
+}
+
+#containerProjects {
+    padding-top: 9em;
 }
 
 #projects .title-section {
@@ -220,6 +223,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     color: #199A9C;
     font-weight: bold;
+    padding-top: 2em;
 }
 
 .textProjects {
@@ -227,6 +231,12 @@ body {
     color: #2A2A2A;
     text-align: left;
 
+}
+
+.imgProject1 {
+
+    width: 70%;
+    border-radius: 1em;
 }
 
 .btnProjects {
@@ -237,6 +247,10 @@ body {
     border-radius: 0.5em;
     border-style: none;
     margin: 1em;
+}
+
+.btnProjects:hover {
+    background-color: #2A2A2A;
 }
 
 /* INICIO ESTILOS SKILLS */
@@ -411,10 +425,15 @@ body {
 /* ANIMACION FRONT END DEVELOPER */
 
 
-/* card */
+/* ANIMACION CARDS PROJECTS*/
 /* entire container, keeps perspective */
 .flip-container {
-	perspective: 1000px;
+    perspective: 1000px;
+    /* margin: 0; */
+    margin: auto;
+    padding: 0;
+    align-content: center;
+    /* background-color: red; */
 }
 	/* flip the pane when hovered */
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
@@ -430,14 +449,12 @@ body {
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 
 /* hide back of pane during swap */
 .frontContent, .backContent {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;

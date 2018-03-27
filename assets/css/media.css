@@ -91,10 +91,14 @@
 
 
 @media (min-width: 670px) and (max-width: 1023px){
-
+  #containerProjects {
+    padding-top: 0em;
+}
 }
 
 @media (max-width: 669px){
-
+#containerProjects {
+    padding-top: 0em;
+}
 }
 
